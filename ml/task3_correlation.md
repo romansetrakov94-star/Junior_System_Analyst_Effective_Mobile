@@ -26,4 +26,4 @@ data = {
 
 df = pd.DataFrame(data)
 corr, p_value = pearsonr(df['coffee'], df['exam_score'])
-print(f"Коэффициент корреляции Пирсона: {corr:.2f}")  # Результат: -0.68ы
+print(f"Коэффициент корреляции Пирсона: {corr:.2f}")  # Результат: -0.68
