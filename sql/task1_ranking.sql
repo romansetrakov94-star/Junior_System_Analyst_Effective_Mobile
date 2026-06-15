@@ -1,0 +1,1 @@
+	sql<br>-- Задание 1: Абитуриенты (создание колонки с позицией в рейтинге)<br>-- Используем оконную функцию ROW_NUMBER() для нумерации по убыванию баллов<br><br>SELECT <br> id,<br> scores,<br> ROW_NUMBER() OVER (ORDER BY scores DESC) AS position<br>FROM examination<br>ORDER BY position;<br>
