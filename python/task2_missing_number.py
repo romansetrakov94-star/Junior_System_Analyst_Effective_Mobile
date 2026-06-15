@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def missing_number(nums):
     n = len(nums) + 1
     total_sum = n * (n + 1) // 2
@@ -8,4 +9,16 @@ def missing_number(nums):
 if __name__ == "__main__":
     nums = [1, 2, 3, 4, 5, 6, 8, 9, 10, 11]
     print(missing_number(nums))  # 7
+=======
+def missing_number(nums):
+    n = len(nums) + 1
+    total_sum = n * (n + 1) // 2
+    actual_sum = sum(nums)
+    return total_sum - actual_sum
+
+# Пример использования
+if __name__ == "__main__":
+    nums = [1, 2, 3, 4, 5, 6, 8, 9, 10, 11]
+    print(missing_number(nums))  # 7
+>>>>>>> 6072b97515edcb726b5ff070f5e8b80f13f462a2
     
